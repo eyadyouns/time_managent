@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    display:inline-block;
+    background-color:blue;
+    border-radius: 20px;
+    padding: 10px 30px;
+    transform: translateY(40px);
+    margin-top: 5px;
+}
+
+ul li a{
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.content{
+    margin-top: 77px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sat,.sun  , .mon, .tues, .wedn  , .thurs , .fri{
+    width: 60px;
+    height: 80px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(92, 119, 241);
+    border-radius: 20px;
+    border: 1px solid rgb(192, 192, 192);
+}
+.tues{
+    background-color: white;
+    color: rgb(92, 119, 241);
+}
+.sat p , .mon p , .wedn p, .fri p , .sun p, .tues p, .thurs p{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+.description{
+    margin-top: 60px;
+}
+.description pre{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+.description span{
+    font-size: 25px;
+    padding-left: 40px;
+    color: crimson;
+}
+.description p , .description ol{
+    padding-left: 65px;
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: crimson;
+   }
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: none;
+   }

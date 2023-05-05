@@ -1,0 +1,195 @@
+/*global rules*/
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --form1st-main-color:rgba(30, 33, 206, 0.815);
+    --form2st-main-color:rgba(16, 70, 95, 0.815);
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+} 
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration-line: none;
+}
+/*mobile*/
+@media (min-width:576px) {
+    .container{
+        max-width: 570px;
+    }
+    }
+    /*small*/
+    @media (min-width:768px) {
+    .container{
+        max-width: 750px;
+    }
+    }
+    /*medium*/
+    @media (min-width:992px) {
+    .container{
+        max-width: 970px;
+    }
+    }
+    /*large*/
+    @media (min-width:1200px) {
+    .container{
+        max-width: 1170px;
+    }
+    }
+/*end of global rules*/
+/*START weekly time management*/
+
+.continer button{
+    margin-left: 416px;
+    color: beige;
+    background-color: var(--form2st-main-color);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border-radius: 33px;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+ul li{
+    display:inline-block;
+    background-color:var(--form2st-main-color);
+    border-radius: 20px;
+    padding: 10px 40px;
+    transform: translateY(60px);
+}
+
+ul li a{
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.weekly-planner{
+    margin-top: 100px;
+}
+.container-planner{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container-planner img{
+    width: 300px;
+    height: 200px;
+    border-radius: 50px 30px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.container-planner{
+    display: inline;
+    text-align: center;
+}
+.head{
+    display: inline-flex;
+}
+.container-planner .head p {
+    font-size: 40px;
+    color: var(--form2st-main-color);
+    background-color: beige;
+    height: 57px;
+    margin-left:60px;
+    width: 520px;
+    border-radius: 10px;
+}
+.container-planner .head p I{
+    color: rgb(151 143 143 / 89%);
+    font-size: 28px;
+}
+.container-planner p span{
+    font-size: 50px;
+    color:var(--form1st-main-color);
+}
+
+.days-of-the-week{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 55px;
+    padding-left: 10PX;
+}
+.saturday ,.monday , .wednesday,.sunday , .tuesday , .friday,.thursday {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 50px;
+}
+.saturday ,.monday , .wednesday{
+    background-color: #ececcf;
+}
+.sunday , .tuesday , .friday,.thursday{
+    background-color: #e1e1b4;
+
+}
+.container-planner .day{
+    font-size: 40px;
+    color: var(--form2st-main-color);
+    background-color: beige;
+}
+
+.container-planner .day span{
+    font-size: 40px;
+    color: var(--form1st-main-color);
+}
+.day-info{
+    margin-top: -15px;
+}
+.day-info label{
+color: var(--form1st-main-color);
+font-size: 17px;
+}
+.day-info input{
+    margin-top: 5px;
+    border: 1px dashed var(--form2st-main-color);
+    border-radius: 20px;
+}
+.days-of-the-week button{
+    font-size: 20px;
+    width: 110px;
+    margin-top: 10px;
+    color:black;
+    border-radius: 20px;
+    border:1px solid var(--form2st-main-color)
+}
+.note{
+    grid-column: 2/4;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--form2st-main-color);
+}
+.note p{
+    font-size: 30px;
+}
+textarea{
+    width: 560px;
+    height: 160px;
+    border-radius: 30px;
+    padding: 15px;
+}
